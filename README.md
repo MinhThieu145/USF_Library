@@ -88,7 +88,34 @@ So, I want to know whether the room would be occiped or not. So I compare the av
 Note: Because I check the web at 6am and 12am, I will only count from 1pm. Since all the room in the morning would be gone after 12am.  
     
 So, most rooms have the counts of Available - Unavailable much higher than the Available - Available. Especially those popular rooms like 257, 258, 514C, 514A, etc have the counts of Available - Unavailable significantly higher than Available - Available.    
-The **ONLY** exception is the room 438, which is the least popular room according to the table above (the popular table). 
+The **ONLY** exception is the room 438, which is the least popular room according to the table above (the popular table).  
+    
+Since the graph above is a little difficult to see which rooms will run out the fastest, I draw another graph below.    
+    
+![image](https://user-images.githubusercontent.com/88282475/197421149-f78543f2-c97f-4941-b51b-61862d012489.png)   
+So room 257, 514C, 258 and a few popular rooms are those room that you want to book early. But if you want the room 438, you're in luck, cause it will available.    
+     
+Again, just to compare the popular rooms and rooms that run out early, I put a table of top 5 of them:    
+    
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/88282475/197421234-ddd7a7ac-df2f-48c7-9211-05aea0ebeb53.png" alt="Sublime's custom image"/>
+</p>
+    
+If you ever wonder how many percent of them are still available compare to the total(total of available and unavailable of that room), here it is:   
+    
+![image](https://user-images.githubusercontent.com/88282475/197421650-ab526c14-aab4-4916-a3bc-a1d7052dd238.png)    
+The trend remain the same. The room 257 has only 14% that is still available, while room 438 has over 50% that is still available.    
+Finally, just for fun, I put the count and the percentage side by side for comparasion.    
+     
+![image](https://user-images.githubusercontent.com/88282475/197421849-59d3fe32-b0f5-4852-82ae-ef35e36a69f6.png)
+
+# Modelling 
+
+
+
+
+
+
 
 
 
