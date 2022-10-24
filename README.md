@@ -110,31 +110,23 @@ Finally, just for fun, I put the count and the percentage side by side for compa
 ![image](https://user-images.githubusercontent.com/88282475/197421849-59d3fe32-b0f5-4852-82ae-ef35e36a69f6.png)
 
 # Modelling 
+I used a variety of models to train the dataset. Here is the result:   
+    
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/88282475/197426870-d9476231-5561-4223-ba42-2d430288012c.png" alt="Sublime's custom image"/>
+</p>
 
+Random forest is the model with the best result, so I tuned it with GridSearchCV. Here is the best parameter:
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/88282475/197427161-d01f7e5a-02b4-47d2-8674-ae37af5c7d0c.png" alt="Sublime's custom image"/>
+</p>
+    
+Finally, put the model to predict the test set.    
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/88282475/197427227-cca57453-ea2d-4ac9-9b9b-a97b73647a79.png" alt="Sublime's custom image"/>
+</p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+With the accuracy score: **0.943**
