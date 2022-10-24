@@ -1,6 +1,10 @@
 # USF Library
 An analysis of the availability of rooms at the USF library. 
 
+# Notebook and dataset
+- Notebook ( I uploaded to Kaggle, dataset included): https://www.kaggle.com/code/th1402/notebook 
+- Dataset: https://www.kaggle.com/datasets/th1402/usf-library-dataset
+
 # Summary
 ## The data scraping process
 - The data was from the USF library room reservation website: https://calendar.lib.usf.edu/spaces
