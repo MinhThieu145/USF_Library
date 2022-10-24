@@ -5,19 +5,19 @@ An analysis on the availability of rooms of the USF library.
 ## The data scrapping process
 - The data was from the USF library room reservation website: https://calendar.lib.usf.edu/spaces
 - Tools use to scrape: **Selenium** with **AWS** server for schedule scraping and S3 for data storage.
-- I scrap the data at 3 different time stamp over the day (6 am, 12am and 4pm)
+- I scrap the data at 3 different time stamp over the day (6 am, 12pm and 4pm)
 - I can only see the availability of the day I check (So if the room available on day October 11, that mean I scrap that data on the same day (October)
 - The data was collect over the course of one week
 - Since the data was collected in a short amount of time ( 1 week), it may subject to bias, but the week I scrapped data was an ordinary week (not exam week nor holiday)
 
 ## A few notes about the dataset:
 - The total of available rooms is different throughout the weeks, since library closed at different time throughout the week
-- The total of availabe rooms is decreasing throughout the day as the 7am rooms would not available for you to book at 11am (those hour that have already passed will disapear instead of having the status of unavailable, so If I ping the website at 7am, and the room 256 at 8am is available, then when I check again at 12am, it will disapear regardless the availability)
+- The total of availabe rooms is decreasing throughout the day as the 7am rooms would not available for you to book at 11am (those hour that have already passed will disapear instead of having the status of unavailable, so If I ping the website at 7am, and the room 256 at 8am is available, then when I check again at 12pm, it will disapear regardless the availability)
 - The availability of rooms are counted in 15 mins block (so if room 256 avaialbe from 8:15 to 8:30 is 1 available row, available from 8:30 to 8:45 is another available row)
 
 ## Explanation of the columns' meaning:  
 The data has 6 columns in total, with 1 column will be dropped:
-- checking_hour: this is the time that I ping the page ( 6 mean I check the availability of rooms at 6am, 12 means at 12am and 16 means at 4pm)
+- checking_hour: this is the time that I ping the page ( 6 mean I check the availability of rooms at 6am, 12 means at 12pm and 16 means at 4pm)
 - hour: the availability of rooms at that time 
 - day_of_week: the availability of room at that day of week
 - room: the room number
@@ -36,7 +36,7 @@ I first look at the availability of different rooms at 6am:
   
 As you can see, there are large differences between days in week and weekday compare to weekend. The difference between available and unavailable rooms slowly rises from Monday to Thursday. On Friday the trend is **reversed**, there is more available rooms than unavailable rooms. On weekend, the available rooms are much more than unavailable (since nobody wants to study of the weekends obvious)   
 
-I then saw if the trend is still the same if I check the availability at 12am and 4pm:  
+I then saw if the trend is still the same if I check the availability at 12pm and 4pm:  
 
 ![image](https://user-images.githubusercontent.com/88282475/197418185-776799aa-76cd-4001-87aa-120c5280eee1.png)  
   
