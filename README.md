@@ -4,7 +4,7 @@ An analysis on the availability of rooms of the USF library.
 # Summary
 ## The data scrapping process
 - The data was from the USF library room reservation website: https://calendar.lib.usf.edu/spaces
-- Tools use to scrape: Selenium with AWS server for schedule scraping and S3 for data storage.
+- Tools use to scrape: **Selenium** with **AWS** server for schedule scraping and S3 for data storage.
 - I scrap the data at 3 different time stamp over the day (6 am, 12am and 4pm)
 - I can only see the availability of the day I check (So if the room available on day October 11, that mean I scrap that data on the same day (October)
 - The data was collect over the course of one week
